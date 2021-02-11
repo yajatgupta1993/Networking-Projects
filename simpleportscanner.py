@@ -2,8 +2,8 @@
 import socket
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host = "192.168.43.190"
-port = 21
+host = input("[*] Enter the host to scan: ")
+port = int(input("[*] Enter the host to scan: "))
 
 def portscanner(port):
     if sock.connect_ex((host,port)):
